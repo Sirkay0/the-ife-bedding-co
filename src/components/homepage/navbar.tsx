@@ -30,63 +30,37 @@ interface DropdownColumn {
 
 const NAV_ITEMS: NavItem[] = [
   {
-    label: 'Bedding',
-    href: '/bedding',
-    dropdown: [
-      {
-        heading: 'Sheet Sets',
-        links: [
-          { label: 'French Linen Sheets', href: '/bedding/linen-sheets', badge: 'New' },
-          { label: 'Egyptian Cotton Sets', href: '/bedding/egyptian-cotton' },
-          { label: 'Sateen Weave', href: '/bedding/sateen' },
-          { label: 'Percale Weave', href: '/bedding/percale' },
-        ],
-      },
-      {
-        heading: 'Duvet Covers',
-        links: [
-          { label: 'Organic Linen Duvet', href: '/bedding/linen-duvet', badge: 'Best Seller' },
-          { label: 'Washed Cotton Duvet', href: '/bedding/cotton-duvet' },
-          { label: 'Silk-Blend Duvet', href: '/bedding/silk-duvet' },
-        ],
-      },
-      {
-        heading: 'Collections',
-        links: [
-          { label: 'The Solace Collection', href: '/collections/solace' },
-          { label: 'The Dusk Collection', href: '/collections/dusk' },
-          { label: 'Gift Sets', href: '/collections/gifts', badge: 'Sale' },
-        ],
-      },
-    ],
-  },
-  {
     label: 'Mattresses',
     href: '/mattresses',
     dropdown: [
       {
-        heading: 'By Type',
+        heading: 'Green Earth Line',
         links: [
-          { label: 'Organic Hybrid Latex', href: '/mattresses/hybrid-latex', badge: 'Top Rated' },
-          { label: 'Natural Latex Foam', href: '/mattresses/latex-foam' },
-          { label: 'Innerspring Coil', href: '/mattresses/innerspring' },
-          { label: 'Memory Foam', href: '/mattresses/memory-foam' },
+          { label: 'Snoozy Villa', href: '/mattresses/green-earth/snoozy-villa', badge: 'Full Orthopedic' },
+          { label: 'Comfort Cloud', href: '/mattresses/green-earth/comfort-cloud', badge: 'Semi-Orthopedic' },
         ],
       },
       {
-        heading: 'By Firmness',
+        heading: 'Prestige Line',
         links: [
-          { label: 'Plush Soft', href: '/mattresses/plush' },
-          { label: 'Medium Feel', href: '/mattresses/medium' },
-          { label: 'Firm Support', href: '/mattresses/firm' },
+          { label: 'Apex', href: '/mattresses/prestige/apex', badge: 'Spring + Topper' },
+          { label: 'Phenix', href: '/mattresses/prestige/phenix' },
+          { label: 'Semi Orthopedic (SP)', href: '/mattresses/prestige/sp' },
+          { label: 'Soft Feel Orthopedic (DP1)', href: '/mattresses/prestige/dp1' },
+          { label: 'Orthopedic/Semi (DP2)', href: '/mattresses/prestige/dp2' },
         ],
       },
       {
-        heading: 'Accessories',
+        heading: 'Vono Line',
         links: [
-          { label: 'Mattress Protectors', href: '/mattresses/protectors' },
-          { label: 'Bed Frames & Bases', href: '/mattresses/bases' },
-          { label: 'Mattress Toppers', href: '/mattresses/toppers' },
+          { label: 'Majestic', href: '/mattresses/vono/majestic', badge: 'Full Orthopedic' },
+          { label: 'Rastapedic', href: '/mattresses/vono/rastapedic' },
+          { label: 'Orthorest', href: '/mattresses/vono/orthorest' },
+          { label: 'Orthofirm', href: '/mattresses/vono/orthofirm' },
+          { label: 'Victoria', href: '/mattresses/vono/victoria' },
+          { label: 'Sleep Well', href: '/mattresses/vono/sleep-well' },
+          { label: 'Venus', href: '/mattresses/vono/venus' },
+          { label: 'Comet', href: '/mattresses/vono/comet' },
         ],
       },
     ],
@@ -96,42 +70,51 @@ const NAV_ITEMS: NavItem[] = [
     href: '/pillows',
     dropdown: [
       {
-        heading: 'Sleep Pillows',
+        heading: 'Green Earth Line',
         links: [
-          { label: 'Mulberry Silk Pillow', href: '/pillows/silk', badge: 'Luxury' },
-          { label: 'Down & Feather', href: '/pillows/down' },
-          { label: 'Memory Foam Contour', href: '/pillows/memory-foam' },
-          { label: 'Organic Buckwheat', href: '/pillows/buckwheat' },
+          { label: 'Green Earth Pillow', href: '/pillows/green-earth/green-earth-pillow' },
         ],
       },
       {
-        heading: 'Specialty',
+        heading: 'Prestige Line',
         links: [
-          { label: 'Cooling Pillow', href: '/pillows/cooling' },
-          { label: 'Body Pillow', href: '/pillows/body' },
-          { label: 'Travel Pillow', href: '/pillows/travel' },
+          { label: 'Prestige Voyage Pillow', href: '/pillows/prestige/voyage', badge: 'Best Seller' },
+        ],
+      },
+      {
+        heading: 'Vono Line',
+        links: [
+          { label: 'Fibre Pillow', href: '/pillows/vono/fibre' },
+          { label: 'Executive Pillow', href: '/pillows/vono/executive' },
+          { label: 'Memory Pillow', href: '/pillows/vono/memory' },
+          { label: 'Mercury Fibre Pillow', href: '/pillows/vono/mercury-fibre' },
         ],
       },
     ],
   },
   {
-    label: 'Throws & Duvets',
-    href: '/throws',
+    label: 'Bedding & Accessories',
+    href: '/bedding',
     dropdown: [
       {
-        heading: 'Duvets',
+        heading: 'Bedding',
         links: [
-          { label: 'Goose Down All-Season', href: '/throws/goose-down', badge: 'New' },
-          { label: 'Microfibre Duvet', href: '/throws/microfibre' },
-          { label: 'Wool-Filled Duvet', href: '/throws/wool' },
+          { label: 'Bedsheet Sets', href: '/bedding/bedsheets', badge: 'New' },
+          { label: 'Duvet Covers', href: '/bedding/duvets' },
+          { label: 'Bedcovers', href: '/bedding/bedcovers' },
         ],
       },
       {
-        heading: 'Throws & Blankets',
+        heading: 'Protectors & Toppers',
         links: [
-          { label: 'Cashmere Throw', href: '/throws/cashmere' },
-          { label: 'Waffle-Knit Blanket', href: '/throws/waffle' },
-          { label: 'Sherpa Fleece', href: '/throws/sherpa' },
+          { label: 'Mackintosh Protectors', href: '/bedding/mackintosh' },
+          { label: 'Mattress Toppers', href: '/bedding/mattress-toppers' },
+        ],
+      },
+      {
+        heading: 'Accessories',
+        links: [
+          { label: 'View All Accessories', href: '/bedding/accessories' },
         ],
       },
     ],
@@ -143,9 +126,9 @@ const NAV_ITEMS: NavItem[] = [
 
 function AnnouncementBar() {
   const messages = [
-    '✦ Complimentary global shipping on orders over $200',
-    '✦ 100-Night risk-free sleep trial on all mattresses',
-    '✦ Organic Tranquility Collection — now available',
+    '✦ Free delivery on orders within Lagos & Abuja',
+    '✦ Genuine Green Earth, Prestige & Vono mattresses — certified quality',
+    '✦ Visit our showroom or order online — we deliver nationwide',
   ]
   const [index, setIndex] = useState(0)
 
@@ -452,7 +435,7 @@ export default function Navbar() {
                 The Ife Bedding Co.
               </span>
               <span className="text-[10px] uppercase tracking-[0.22em] text-warm-taupe font-medium mt-0.5 hidden sm:block">
-                Organic Luxury Sleep
+                Premium Sleep, Nigerian Homes
               </span>
             </a>
 
@@ -610,18 +593,18 @@ export default function Navbar() {
             `}
           >
             {[
-              'Linen Sheets',
               'Mattresses',
               'Pillows',
-              'Duvet Covers',
-              'Throws',
-              'Gift Sets',
+              'Bedsheets',
+              'Duvets',
+              'Bedcovers',
+              'Mackintosh',
+              'Mattress Toppers',
               'New Arrivals',
-              'Sale',
             ].map((tag) => (
               <a
                 key={tag}
-                href={`/shop?category=${tag.toLowerCase().replace(' ', '-')}`}
+                href={`/shop?category=${tag.toLowerCase().replace(/ /g, '-')}`}
                 className="shrink-0 hover:text-baked-clay transition-colors cursor-pointer"
               >
                 {tag}

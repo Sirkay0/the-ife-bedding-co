@@ -243,19 +243,19 @@ export default function Hero() {
                   </span>
 
                   <h3 className="font-heading text-[15px] font-semibold text-[#2B1D18] leading-snug mb-0.5">
-                    The Solace Linen Set
+                    Vono Majestic Mattress
                   </h3>
                   <p className="text-[12px] text-[#8C7A70] mb-3">
-                    100% French Linen · Queen
+                    Full Orthopedic · King 6×6
                   </p>
 
                   <div className="flex items-center justify-between">
                     <div className="flex items-baseline gap-1.5">
-                      <span className="text-[16px] font-bold text-[#2B1D18]">₦148,000</span>
-                      <span className="text-[12px] text-[#D4A5A5] line-through font-medium">₦175,000</span>
+                      <span className="text-[16px] font-bold text-[#2B1D18]">₦285,000</span>
+                      <span className="text-[12px] text-[#D4A5A5] line-through font-medium">₦320,000</span>
                     </div>
                     <a
-                      href="/bedding/solace-linen-set"
+                      href="/mattresses/vono/majestic"
                       className="
                         flex items-center gap-1.5
                         bg-[#C86B53] text-[#F7F5F0]
