@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import Link from 'next/link'
 import { Star, ShoppingBag, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { CoverImage } from '@/components/myImage'
 
@@ -22,54 +23,55 @@ interface Product {
 
 const PRODUCTS: Product[] = [
   {
-    id: 'ortho-hybrid-mattress',
-    name: 'OrthoRest Hybrid Mattress',
-    descriptor: 'Queen · Dual-Layer Foam + Pocket Spring',
+    id: 'vono-majestic',
+    name: 'Vono Majestic',
+    descriptor: 'Full Orthopedic · King 6×6',
     image: '/product-ortho-mattress.jpg',
-    imageAlt: 'Cross-section of an orthopedic hybrid mattress showing foam and spring layers.',
+    imageAlt: 'Vono Majestic full orthopedic mattress with premium quilted fabric surface.',
     price: 285_000,
     comparePrice: 320_000,
     rating: 5,
     reviewCount: 312,
     badge: { label: 'Top Rated', variant: 'top' },
-    href: '/mattresses/orthorest-hybrid',
+    href: '/mattresses/vono/majestic',
   },
   {
-    id: 'linen-sheet-set',
-    name: 'The Lagos Linen Set',
-    descriptor: 'King · 100% Pure Cotton Linen',
-    image: '/product-linen-sheets.jpg',
-    imageAlt: 'A folded set of crisp cloud-dancer linen sheets tied with a natural ribbon.',
-    price: 62_000,
+    id: 'green-earth-snoozy-villa',
+    name: 'Green Earth Snoozy Villa',
+    descriptor: 'Full Orthopedic · Queen 6×4.5',
+    image: '/category-mattress.jpg',
+    imageAlt: 'Green Earth Snoozy Villa full orthopedic mattress in a bright, well-lit bedroom.',
+    price: 245_000,
+    comparePrice: 275_000,
     rating: 5,
     reviewCount: 487,
     badge: { label: 'Best Seller', variant: 'top' },
-    href: '/bedding/lagos-linen-set',
+    href: '/mattresses/green-earth/snoozy-villa',
   },
   {
-    id: 'baked-clay-duvet',
-    name: 'Terracotta Duvet Cover',
-    descriptor: 'Queen · Washed Cotton · Reversible',
-    image: '/product-duvet-set.jpg',
-    imageAlt: 'A baked-clay terracotta duvet cover folded to reveal its crisp white inner lining.',
-    price: 48_500,
-    comparePrice: 58_000,
-    rating: 4,
+    id: 'prestige-apex',
+    name: 'Prestige Apex',
+    descriptor: 'Spring Mattress with Topper · King 6×6',
+    image: '/product-ortho-mattress.jpg',
+    imageAlt: 'Prestige Apex spring mattress with integrated mattress topper, side profile view.',
+    price: 198_000,
+    comparePrice: 230_000,
+    rating: 5,
     reviewCount: 198,
     badge: { label: 'New', variant: 'new' },
-    href: '/bedding/terracotta-duvet',
+    href: '/mattresses/prestige/apex',
   },
   {
-    id: 'silk-pillow',
-    name: 'Premium Microfiber Pillow',
-    descriptor: 'Standard - Premium Microfiber & Memory Foam',
+    id: 'vono-executive-pillow',
+    name: 'Vono Executive Pillow',
+    descriptor: 'Standard · Premium Microfibre Fill',
     image: '/product-silk-pillow.jpg',
-    imageAlt: 'A plump ivory mulberry silk pillow with elegant piping edge detail.',
-    price: 34_000,
+    imageAlt: 'Vono Executive pillow, plump and cloud-white, on a neatly made bed.',
+    price: 28_000,
     rating: 5,
     reviewCount: 261,
     badge: { label: 'New', variant: 'new' },
-    href: '/pillows/mulberry-silk',
+    href: '/pillows/vono/executive',
   },
 ]
 
@@ -115,7 +117,7 @@ function ProductCard({ product }: { product: Product }) {
 
   return (
     <article className="group flex-none w-[72vw] sm:w-auto">
-      <a href={href} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-2xl">
+      <Link href={href} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-2xl">
 
         {/* ── Image container ── */}
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-muted mb-4">
@@ -203,7 +205,7 @@ function ProductCard({ product }: { product: Product }) {
             )}
           </div>
         </div>
-      </a>
+      </Link>
     </article>
   )
 }

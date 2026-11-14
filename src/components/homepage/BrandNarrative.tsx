@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Armchair, Wind, Medal } from 'lucide-react'
 import { CoverImage } from '@/components/myImage'
 
@@ -101,7 +102,7 @@ export default function BrandNarrative() {
         */}
         <div className="mb-14 lg:mb-20">
           <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-muted-foreground mb-4">
-            Why The Ife Bedding Co.
+            Why Sisi Oni Mattress.
           </p>
           <h2
             id="brand-narrative-heading"
@@ -200,7 +201,7 @@ export default function BrandNarrative() {
 
             {/* ── CTA row — mirrors Hero primary CTA style exactly ── */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a
+              <Link
                 href="/shop"
                 id="narrative-cta-primary"
                 className="
@@ -214,8 +215,8 @@ export default function BrandNarrative() {
                 "
               >
                 Shop Our Range
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/about"
                 className="
                   inline-flex items-center justify-center gap-2
@@ -227,7 +228,7 @@ export default function BrandNarrative() {
                 "
               >
                 Our Story
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -253,7 +254,7 @@ export default function BrandNarrative() {
             <div className="w-10 h-[1px] bg-primary hidden lg:block" aria-hidden="true" />
             <div>
               <p className="text-[13px] font-semibold text-background/90 leading-snug">
-                Founder, The Ife Bedding Co.
+                Founder, Sisi Oni Mattress.
               </p>
               <p className="text-[11px] text-background/50 font-medium mt-0.5">
                 Lagos, Nigeria

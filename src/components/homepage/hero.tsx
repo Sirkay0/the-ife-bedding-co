@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { CoverImage } from '@/components/myImage'
 import { ArrowRight, BadgeCheck, Truck, Lock, Star, Leaf } from 'lucide-react'
 
@@ -97,7 +98,7 @@ export default function Hero() {
             {/* CTA group */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-14">
               {/* Primary CTA */}
-              <a
+              <Link
                 href="/shop"
                 id="hero-cta-primary"
                 className="
@@ -118,11 +119,11 @@ export default function Hero() {
                   group-hover/cta:translate-x-1
                   transition-transform duration-200
                 " />
-              </a>
+              </Link>
 
               {/* Secondary CTA */}
-              <a
-                href="/mattresses"
+              <Link
+                href="/shop?category=mattresses"
                 id="hero-cta-secondary"
                 className="
                   inline-flex items-center justify-center gap-2
@@ -134,7 +135,7 @@ export default function Hero() {
                 "
               >
                 Explore Mattresses
-              </a>
+              </Link>
             </div>
 
             {/* Trust signal row */}
@@ -254,7 +255,7 @@ export default function Hero() {
                       <span className="text-[16px] font-bold text-[#2B1D18]">₦285,000</span>
                       <span className="text-[12px] text-[#D4A5A5] line-through font-medium">₦320,000</span>
                     </div>
-                    <a
+                    <Link
                       href="/mattresses/vono/majestic"
                       className="
                         flex items-center gap-1.5
@@ -266,7 +267,7 @@ export default function Hero() {
                       "
                     >
                       Shop <ArrowRight className="w-3 h-3" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

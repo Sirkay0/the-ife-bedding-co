@@ -43,7 +43,7 @@ const SOCIALS = [
   { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com' },
   { icon: FaXTwitter,  label: 'X (Twitter)',  href: 'https://x.com'      },
   { icon: FaTiktok,    label: 'TikTok',    href: 'https://tiktok.com'    },
-  { icon: FaWhatsapp,  label: 'WhatsApp',  href: 'https://wa.me'         },
+  { icon: FaWhatsapp,  label: 'WhatsApp',  href: 'https://wa.me/2349037618972'         },
 ] as const
 
 // ─── Newsletter Form ──────────────────────────────────────────────────────────
@@ -132,7 +132,7 @@ export default function Footer() {
                 text-[#F7F5F0] group-hover:text-[#C86B53]
                 transition-colors duration-200
               ">
-                The Ife Bedding Co.
+                Sisi Oni Mattress.
               </span>
               <span className="block text-[10px] uppercase tracking-[0.22em] text-[#8C7A70] font-medium mt-0.5">
                 Premium Sleep. Nigerian Made.
@@ -196,7 +196,7 @@ export default function Footer() {
             </p>
             <ul className="space-y-4">
               {[
-                { label: 'WhatsApp',  value: '+234 9003 761 8972', href: 'https://wa.me/23490037618972' },
+                { label: 'WhatsApp',  value: '+234 9003 761 8972', href: 'https://wa.me/2349037618972' },
                 { label: 'Email',     value: 'ayobamiadefowope@gmail.com', href: 'mailto:ayobamiadefowope@gmail.com' },
                 { label: 'Hours',     value: 'Mon–Sat · 8am–8pm WAT', href: null },
                 { label: 'Location',  value: 'Lagos, Nigeria', href: null },
@@ -231,7 +231,7 @@ export default function Footer() {
           {/* Copyright + secure badge */}
           <div className="flex items-center gap-4 order-2 sm:order-1">
             <p className="text-[11.5px] text-[#F7F5F0]/35 font-medium">
-              © 2026 The Ife Bedding Co. All rights reserved.
+              © 2026 Sisi Oni Mattress. All rights reserved.
             </p>
             <span className="hidden sm:flex items-center gap-1 text-[10.5px] text-[#8C7A70] font-medium">
               <ShieldCheck className="w-3 h-3 text-[#98A892]" aria-hidden="true" />

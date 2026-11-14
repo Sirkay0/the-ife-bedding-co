@@ -2,7 +2,7 @@
 
 import { FaWhatsapp } from 'react-icons/fa6'
 
-const WA_NUMBER = '2349003761897'
+const WA_NUMBER = '234903761897'
 const WA_MESSAGE = encodeURIComponent('Hi! I\'d like to enquire about your bedding products.')
 
 export default function FloatingWhatsApp() {

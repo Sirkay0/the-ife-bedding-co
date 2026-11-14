@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import {
   ShoppingBag,
   Search,
@@ -175,7 +176,7 @@ function MegaMenu({ columns }: { columns: DropdownColumn[] }) {
             <ul className="space-y-1.5">
               {col.links.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="
                       group/link flex items-center justify-between
@@ -198,7 +199,7 @@ function MegaMenu({ columns }: { columns: DropdownColumn[] }) {
                         {link.badge}
                       </span>
                     )}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -261,7 +262,7 @@ function MobileDrawer({
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-[#8C7A70]/20">
           <span className="font-heading text-xl font-semibold text-deep-espresso tracking-tight">
-            The Ife Bedding Co.
+            Sisi Oni Mattress
           </span>
           <button
             onClick={onClose}
@@ -305,9 +306,10 @@ function MobileDrawer({
                             {col.heading}
                           </p>
                           {col.links.map((link) => (
-                            <a
+                            <Link
                               key={link.label}
                               href={link.href}
+                              onClick={onClose}
                               className="flex items-center gap-2 py-1.5 text-sm text-deep-espresso/80 hover:text-baked-clay font-medium transition-colors"
                             >
                               <ArrowRight className="w-3 h-3 text-baked-clay opacity-60" />
@@ -317,7 +319,7 @@ function MobileDrawer({
                                   {link.badge}
                                 </span>
                               )}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       ))}
@@ -325,12 +327,13 @@ function MobileDrawer({
                   )}
                 </>
               ) : (
-                <a
+                <Link
                   href={item.href}
+                  onClick={onClose}
                   className="flex items-center px-4 py-3.5 rounded-xl text-sm font-semibold text-deep-espresso hover:bg-[#8C7A70]/10 transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
               )}
             </div>
           ))}
@@ -338,14 +341,16 @@ function MobileDrawer({
 
         {/* Footer actions */}
         <div className="px-6 py-6 border-t border-[#8C7A70]/20 space-y-3">
-          <a
+          <Link
             href="/contact"
+            onClick={onClose}
             className="flex items-center gap-2.5 text-sm font-medium text-warm-taupe hover:text-deep-espresso transition-colors"
           >
             <Phone className="w-4 h-4" /> Customer Support
-          </a>
-          <a
+          </Link>
+          <Link
             href="/shop"
+            onClick={onClose}
             className="
               w-full flex items-center justify-center gap-2
               bg-baked-clay text-cloud-dancer
@@ -354,7 +359,7 @@ function MobileDrawer({
             "
           >
             <Sparkles className="w-4 h-4" /> Shop All Collections
-          </a>
+          </Link>
         </div>
       </aside>
     </>
@@ -426,18 +431,18 @@ export default function Navbar() {
           <div className="h-[72px] flex items-center justify-between gap-6">
 
             {/* Brand Wordmark */}
-            <a
+            <Link
               href="/"
               className="shrink-0 flex flex-col leading-none group"
               aria-label="The Ife Bedding Co. — Home"
             >
               <span className="font-heading text-[22px] md:text-[26px] font-semibold tracking-tight text-deep-espresso group-hover:text-baked-clay transition-colors duration-200">
-                The Ife Bedding Co.
+                Sisi Oni Mattress
               </span>
               <span className="text-[10px] uppercase tracking-[0.22em] text-warm-taupe font-medium mt-0.5 hidden sm:block">
                 Premium Sleep, Nigerian Homes
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Nav Links */}
             <nav
@@ -452,7 +457,7 @@ export default function Navbar() {
                   onMouseEnter={() => item.dropdown && handleMenuEnter(item.label)}
                   onMouseLeave={handleMenuLeave}
                 >
-                  <a
+                  <Link
                     href={item.href}
                     className={`
                       relative inline-flex items-center gap-1 px-4 py-2 rounded-full
@@ -482,7 +487,7 @@ export default function Navbar() {
                         ${activeMenu === item.label ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}
                       `}
                     />
-                  </a>
+                  </Link>
 
                   {/* Mega Menu */}
                   {item.dropdown && activeMenu === item.label && (
@@ -537,7 +542,7 @@ export default function Navbar() {
               </div>
 
               {/* Cart */}
-              <a
+              <Link
                 href="/cart"
                 className="relative p-2.5 rounded-full text-warm-taupe hover:text-deep-espresso hover:bg-[#8C7A70]/10 transition-all"
                 aria-label="Shopping bag, 2 items"
@@ -554,10 +559,10 @@ export default function Navbar() {
                 >
                   2
                 </span>
-              </a>
+              </Link>
 
               {/* Shop CTA — desktop only */}
-              <a
+              <Link
                 href="/shop"
                 className="
                   hidden xl:inline-flex items-center gap-2
@@ -569,7 +574,7 @@ export default function Navbar() {
                 "
               >
                 Shop Now
-              </a>
+              </Link>
 
               {/* Mobile hamburger */}
               <button
@@ -602,13 +607,13 @@ export default function Navbar() {
               'Mattress Toppers',
               'New Arrivals',
             ].map((tag) => (
-              <a
+              <Link
                 key={tag}
                 href={`/shop?category=${tag.toLowerCase().replace(/ /g, '-')}`}
                 className="shrink-0 hover:text-baked-clay transition-colors cursor-pointer"
               >
                 {tag}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

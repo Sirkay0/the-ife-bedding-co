@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { CoverImage } from '@/components/myImage'
 
@@ -49,7 +50,7 @@ function CategoryCard({
   badge,
 }: (typeof CATEGORIES)[number]) {
   return (
-    <a
+    <Link
       href={href}
       aria-label={`Shop ${label}`}
       className="group relative flex flex-col overflow-hidden rounded-2xl bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -116,7 +117,7 @@ function CategoryCard({
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
 
@@ -164,7 +165,7 @@ export default function CategoryGrid() {
           </div>
 
           {/* Desktop: View All link — same tracking/weight as hero sub-badge text */}
-          <a
+          <Link
             href="/shop"
             className="
               hidden sm:inline-flex items-center gap-2 shrink-0
@@ -177,7 +178,7 @@ export default function CategoryGrid() {
           >
             View all products
             <ArrowRight className="w-3.5 h-3.5" />
-          </a>
+          </Link>
         </div>
 
         {/* ── Grid — 1 col mobile / 3 col desktop ── */}
@@ -189,7 +190,7 @@ export default function CategoryGrid() {
 
         {/* Mobile: View All — full width pill, matches hero secondary CTA style */}
         <div className="mt-8 sm:hidden">
-          <a
+          <Link
             href="/shop"
             className="
               w-full flex items-center justify-center gap-2
@@ -202,7 +203,7 @@ export default function CategoryGrid() {
           >
             View all products
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
 
       </div>
