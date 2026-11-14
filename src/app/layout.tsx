@@ -18,7 +18,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "The Ife Bedding Co. | Luxury Bedding, Mattresses & Home Comfort",
+  title: "Sisi Oni Mattress. | Luxury Bedding, Mattresses & Home Comfort",
   description:
     "Experience organic tranquility and luxurious comfort with handcrafted bedding, mattresses, and pillows by The Ife Bedding Co.",
 };
